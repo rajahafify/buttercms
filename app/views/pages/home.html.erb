@@ -1,2 +1,15 @@
-<p>
-  <%= @member_json %>
+<% @members_json.each do |member| %>
+  <ul>
+    <li>
+      <p>
+        <%= member.name %>
+      </p>
+      <p>
+        <%= member.email %>
+      </p>
+      <p>
+        <%= member.phone_number %>
+      </p>
+    </li>
+  </ul>
+<% end %>
